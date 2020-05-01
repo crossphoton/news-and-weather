@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+
+* {
+  margin: 10px;
+  overflow-x: hidden;
+  padding: 0;
+  color: white;
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  background: white;
+  opacity: 0.7;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-100%, -100%);
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 0;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(76, 230, 171),
+    rgb(47, 147, 206),
+    rgb(109, 50, 185),
+    rgb(182, 41, 76)
+  );
+  animation: ease change 10s infinite;
+  background-size: 400% 400%;
+  background-position: 0% 0%;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0%, 0%;
+  }
+  20% {
+    background-position: 50%, 50%;
+  }
+  50% {
+    background-position: 100%, 100%;
+  }
+  80% {
+    background-position: 50%, 50%;
+  }
+  100% {
+    background-position: 0%, 0%;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+.message {
+  /* color: white; */
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main {
+  display: flex;
+}
+
+.news,
+.weather,
+.trial {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 10vw;
+}
+
+.news-content {
+  margin-left: 30px;
+}
+
+.news-headline h3 {
+  color: blue;
+}
+
+input {
+  max-width: 15vw;
+  border: none;
+  border-bottom: 2px solid white;
+  font-weight: 900;
+  font-size: large;
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+input:focus {
+  border-bottom: 2px solid blue;
+  transform: translateY(-7px);
+  font-size: larger;
+}
+
+.news-card {
+  background-color: rgba(212, 212, 212, 0.103);
+}
