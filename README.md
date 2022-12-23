@@ -17,3 +17,7 @@ Obviously the query can be modified by changing the URL used in fetch();
 ## Cursor
 
 I changed the cursor because I like it in this way and it looks minimal.
+
+## Preview
+
+![Preview](./preview.png "Preview")

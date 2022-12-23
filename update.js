@@ -13,7 +13,7 @@ document.addEventListener("mousemove", (e) => {
 
 function newsGet() {
   fetch(
-    `http://newsapi.org/v2/top-headlines?country=${country.value}&q=${newsQuery.value}&apiKey=${key.news}`
+    `https://newsapi.org/v2/top-headlines?country=${country.value}&q=${newsQuery.value}&apiKey=${key.news}`
   )
     .then((res) => res.json())
     .then((data) => updateNews(data));
@@ -21,7 +21,7 @@ function newsGet() {
 
 function weatherGet() {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=metric&appid=${key.weather}`
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=metric&appid=${key.weather}`
   )
     .then((res) => res.json())
     .then((data) => updateWeather(data, 0))
