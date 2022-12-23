@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Manrope&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 * {
   margin: 10px;
@@ -9,7 +9,7 @@
 }
 
 .cursor {
-  position: absolute;
+  position: fixed;
   background: white;
   opacity: 0.7;
   width: 20px;
@@ -61,9 +61,9 @@ section {
   }
 }
 
-body {
-  font-family: "Manrope", sans-serif;
-  background: rgb(0, 0, 0);
+body, input {
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(34, 34, 34);
 }
 
 .message {
@@ -74,6 +74,8 @@ body {
 
 main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .news,
@@ -87,10 +89,11 @@ main {
 
 .news-content {
   margin-left: 30px;
+  color: rgb(199, 199, 199);
 }
 
 .news-headline h3 {
-  color: blue;
+  color: rgb(143, 143, 236);
 }
 
 input {
@@ -104,12 +107,9 @@ input {
   transition: all 0.3s ease;
   padding: 5px;
 }
-input:focus {
-  border-bottom: 2px solid blue;
-  transform: translateY(-7px);
-  font-size: larger;
-}
 
 .news-card {
   background-color: rgba(212, 212, 212, 0.103);
+  border-radius: 20px;
+  padding: 10px;
 }
